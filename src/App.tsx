@@ -11,7 +11,8 @@ function App() {
       <>
         {import.meta.env.VITE_TEMPO === "true" && useRoutes(routes)}
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<ResumePage />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/resume" element={<ResumePage />} />
           <Route
             path="/resume/minimal"
